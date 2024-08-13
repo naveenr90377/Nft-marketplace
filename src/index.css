@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.gradient-bg-hero {
+  background-color: #0b0501;
+  background-image: radial-gradient(
+      at 0% 0%,
+      hsl(0, 96%, 73%) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 50% 0%, hsl(0, 13%, 88%) 0, transparent 50%),
+    radial-gradient(at 100% 0%, rgb(148, 58, 58) 0, transparent 50%);
+}
+
+.gradient-bg-artworks {
+  background-color: #0d091e;
+  background-image: radial-gradient(
+      at 50% 50%,
+      hsl(300, 85%, 43%) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 0% 0%, rgb(4, 14, 23) 0, transparent 50%),
+    radial-gradient(at 50% 50%, rgb(6, 42, 56) 0, transparent 50%);
+}
+
+.gradient-bg-footer {
+  background-color: #1b0802;
+  background-image: radial-gradient(
+      at 0% 100%,
+      hsl(0, 60%, 54%) 0,
+      transparent 53%
+    ),
+    radial-gradient(at 50% 150%, rgb(207, 96, 76) 0, transparent 50%);
+}
+
+.text-gradient {
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lds-dual-ring {
+  display: inline-block;
+}
+.lds-dual-ring:after {
+  content: ' ';
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
